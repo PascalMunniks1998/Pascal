@@ -1,6 +1,6 @@
 package H02;
 
-import java.applet.Applet;
+import java.applet.*;
 import java.awt.*;
 
 /**
@@ -9,14 +9,15 @@ import java.awt.*;
 
 
 
-03/02/26
+//03/02/26
 
         public class H02 extends Applet {
 
         public void init() {
-
+          setBackground(Color.blue);
         }
         public void paint(Graphics g) {
-            g.drawString("Welcome to1 Java!!", 50, 60 );
+            g.setColor(Color.yellow);
+            g.drawString("Hallo Pascal!!", 50, 60 );
         }
 }
