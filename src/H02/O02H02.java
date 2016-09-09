@@ -14,7 +14,7 @@ public class O02H02 extends Applet{
     }
     public void paint(Graphics g) {
         g.setColor(Color.blue);
-        g.drawString("Pascal", 50, 60 );
+        g.drawString("Pascal", 50, 60);
         g.setColor(Color.red);
-        g.drawString("Munniks", 50, 60 )
-}
+        g.drawString("Munniks", 50, 70);
+}}
