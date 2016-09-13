@@ -7,7 +7,7 @@ import java.awt.*;
 /**
  * Created by User on 09-09-16.
  */
-public class O02H02 extends Applet{
+public class H02O02 extends Applet{
 
     public void init() {
         setBackground(Color.white);
