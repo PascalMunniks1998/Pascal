@@ -32,7 +32,6 @@ public class H08O01 extends Applet{
     class KnopListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             tekstvak.getText();
-            repaint();
         }
 
     }
