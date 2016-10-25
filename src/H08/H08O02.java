@@ -98,6 +98,4 @@ public class H08O02 extends Applet {
             tekstvak4.setText("" + oplossing1);
         }
     }
-
-
 }
