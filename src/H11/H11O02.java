@@ -17,9 +17,9 @@ public class H11O02 extends Applet {
     @Override
     public void paint(Graphics g) {
         int teller;
-        int y =250;
+        int y = 250;
         for(teller =10; teller <= 20; teller++) {
-            y -=20;
+            y -= 20;
             g.drawString("" + teller,50, y);
 
         }
