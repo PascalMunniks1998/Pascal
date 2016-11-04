@@ -97,7 +97,6 @@ public class H11O09  extends Applet {
             } else {
                 g.setColor(Color.black);
                 g.fillRect(x, y, 50, 50);
-
             }
             x += 50;
         }
@@ -105,7 +104,6 @@ public class H11O09  extends Applet {
         y += 50;
         x = 50;
         for (int kolom = 0; kolom < 8; kolom++) {
-
             if (kolom == 0 || kolom == 2 || kolom == 4 || kolom == 6) {
                 g.setColor(Color.black);
                 g.fillRect(x, y, 50, 50);
@@ -114,7 +112,7 @@ public class H11O09  extends Applet {
                 g.fillRect(x, y, 50, 50);
             }
             x += 50;
-        }
+            }
 
         x = 50;
         y += 50;
@@ -126,7 +124,6 @@ public class H11O09  extends Applet {
             } else {
                 g.setColor(Color.black);
                 g.fillRect(x, y, 50, 50);
-
             }
             x += 50;
         }
