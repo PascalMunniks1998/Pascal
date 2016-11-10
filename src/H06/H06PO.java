@@ -11,7 +11,9 @@ public class H06PO extends Applet{
     double cijfer2;
     double cijfer3;
     int deelcijer;
-    int gemiddelde;
+    double gemiddelde1;
+    int uitkomst;
+    double gemiddelde;
 
     @Override
     public void init() {
@@ -19,7 +21,9 @@ public class H06PO extends Applet{
         cijfer2 = 6.3;
         cijfer3 = 6.9;
         deelcijer = 3;
-        gemiddelde = (int) (cijfer1 + cijfer2 + cijfer3) / deelcijer;
+        gemiddelde1 = (cijfer1 + cijfer2 + cijfer3) / deelcijer * 10;
+        uitkomst = (int) gemiddelde1;
+        gemiddelde = (double) uitkomst / 10;
     }
 
     @Override
