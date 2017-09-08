@@ -34,9 +34,9 @@ public class H13O03 extends Applet {
 
     void bakstenenMuur(Graphics g) {
         int y, x, breedte, hoogte;
-        x = 50;
-        y = 50;
-        breedte = 500;
+        x = 25;
+        y = 25;
+        breedte = 450;
         hoogte = 250;
 
         int breedte2=50;
@@ -48,14 +48,14 @@ public class H13O03 extends Applet {
         for (int i = 0; i < 5; i++) {
             x = 50;
             y += 25;
-            for (int kolom = 0; kolom < 10; kolom++) {
+            for (int kolom = 0; kolom < 8; kolom++) {
                 g.setColor(Color.WHITE);
                 g.drawRect(x, y, breedte2, hoogte2);
                 x += 50;
             }
             x = 25;
             y += 25;
-            for (int kolom = 0; kolom < 11; kolom++) {
+            for (int kolom = 0; kolom < 9; kolom++) {
                 g.setColor(Color.WHITE);
                 g.drawRect(x, y, breedte2, hoogte2);
                 x += 50;
@@ -66,7 +66,7 @@ public class H13O03 extends Applet {
     void betonblokkenMuur(Graphics g) {
         int y, x, breedte, hoogte;
         x = 50;
-        y = 50;
+        y = 25;
         breedte = 500;
         hoogte = 300;
 
