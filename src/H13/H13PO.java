@@ -7,7 +7,7 @@ public class H13PO extends Applet {
 
     @Override
     public void init() {
-
+        setSize(1100, 700);
     }
 
     public void paint (Graphics g) {
