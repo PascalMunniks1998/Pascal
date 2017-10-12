@@ -9,7 +9,7 @@ import java.util.Random;
 public class H14O01 extends Applet{
 
     private String[] typen = {"klaver", "schoppen", "harten", "ruiten"};
-    private String[] kaarten = {"aas", "2", "3", "4", "5", "6", "7", "8", "9", "10", "boer", "vrouw", "heer  "};
+    private String[] kaarten = {"aas", "2", "3", "4", "5", "6", "7", "8", "9", "10", "boer", "vrouw", "heer"};
     private String[] deck = new String[52];
     Button knop;
     int k;
