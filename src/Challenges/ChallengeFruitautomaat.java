@@ -11,20 +11,18 @@ import java.util.Random;
  * Created by Pascal Munniks on 13-10-17.
  */
 public class ChallengeFruitautomaat extends Applet {
-    Button knop;
-    Button koopknop;
+    private Button knop;
+    private Button koopknop;
 
     private Image afbeelding[] = new Image[20];
     private Image afbeelding1;
     private Image afbeelding2;
     private Image afbeelding3;
-    private URL pad;
 
-    int punten;
-    String gewonnen;
-    String gewonnen1;
+    private int punten;
+    private String gewonnen;
+    private String gewonnen1;
 
-    private boolean geklikt;
     private boolean gewonnentrue;
     private boolean gewonnentrue1;
 
@@ -41,7 +39,7 @@ public class ChallengeFruitautomaat extends Applet {
 
         punten = 10;
 
-        pad = ChallengeFruitautomaat.class.getResource("/Challenges/Images/");
+        URL pad = ChallengeFruitautomaat.class.getResource("/Challenges/Images/");
         int teller = 0;
         for (int i = 0; i < 20; i++) {
             afbeelding[i] = getImage(pad, "fruit_" + teller + ".jpg");
@@ -56,11 +54,10 @@ public class ChallengeFruitautomaat extends Applet {
             int random2 = new Random().nextInt(20);
             int random3 = new Random().nextInt(20);
 
+
             afbeelding1 = afbeelding[random1];
             afbeelding2 = afbeelding[random2];
             afbeelding3 = afbeelding[random3];
-            geklikt = true;
-
             punten -= 1;
 
             if (punten == 0) {
@@ -68,10 +65,7 @@ public class ChallengeFruitautomaat extends Applet {
                 knop.setEnabled(false);
             }
 
-            int a = random1;
-            int b = random2;
-            int c = random3;
-            if (a == b || a == c || b == c) {
+            if (random1 == random2 || random1 == random3 || random2 == random3) {
                 punten += 4;
                 gewonnen = "Gewonnen!! 4 krediet erbij";
                 gewonnentrue = true;
@@ -79,7 +73,7 @@ public class ChallengeFruitautomaat extends Applet {
                 gewonnen = "";
             }
 
-            if (a == b && a == c) {
+            if (random1 == random2 && random1 == random3) {
                 punten += 10;
                 gewonnen1 = "Jackpot!! 10 krediet erbij";
                 gewonnentrue1 = true;
