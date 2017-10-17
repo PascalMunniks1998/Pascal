@@ -19,7 +19,7 @@ public class H14O02 extends Applet{
     private String[] speler3 = new String[13];
     private String[] speler4 = new String[14];
 
-    
+    //overige
     private Button knop;
     int k;
 
